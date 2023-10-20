@@ -8,22 +8,20 @@ public class TwoSum {
         
         boolean foundSolution = false;
         int i = 0;
+        int j = i + 1;
         int[] solutionList = new int[2];
-        
-        while (!foundSolution) {
-            int j = i + 1;
 
-            while (j < nums.length && i < nums.length) {
-                if (nums[i] + nums[j] == target) {
-                    solutionList[0] = i;
-                    solutionList[1] = j;
-                    foundSolution = true;
-                } else {
-                    j++;
-                }
-                i++;
+        while (!foundSolution && j < nums.length && i < nums.length) {
+            if (nums[i] + nums[j] == target) {
+                solutionList[0] = i;
+                solutionList[1] = j;
+                foundSolution = true;
+            } else {
+                j++;
             }
+            i++;
         }
+
         return solutionList;
     }
 

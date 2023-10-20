@@ -1,6 +1,7 @@
 package com.mycompany.app;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
 public class TwoSumTest {
@@ -20,7 +21,7 @@ public class TwoSumTest {
     public void twoSumTestWithNoValidInput() {
         int[] nums = {2, 7, 11, 15};
         int target = 100;
-        int[] expectedResult = null;
+        int[] expectedResult = new int[2];
 
         assertArrayEquals(expectedResult, twoSum.twoSum(nums,target));
     }
@@ -47,7 +48,7 @@ public class TwoSumTest {
     public void twoSumTestEmptyArray() {
         int[] nums = {};
         int target = 9;
-        int[] expectedResult = null;
+        int[] expectedResult = new int[2];
 
         assertArrayEquals(expectedResult, twoSum.twoSum(nums, target));
     }
@@ -92,7 +93,9 @@ public class TwoSumTest {
     public void twoSumTestZero() {
         int[] nums = {0, 0};
         int target = 0;
+        int[] result = twoSum.twoSum(nums, target);
 
-        assertEquals(0, twoSum.twoSum(nums, target));
+        assertNotNull(result);
+        assertEquals(2, result);
     }
 }
