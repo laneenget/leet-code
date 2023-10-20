@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.app.TwoSumTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.037 s <<< FAILURE! - in com.mycompany.app.TwoSumTest
+twoSumTestWithNoValidInput(com.mycompany.app.TwoSumTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.app.TwoSum.twoSum(int[], int)" because "this.twoSum" is null
+	at com.mycompany.app.TwoSumTest.twoSumTestWithNoValidInput(TwoSumTest.java:25)
+
+twoSumTestEmptyArray(com.mycompany.app.TwoSumTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.app.TwoSum.twoSum(int[], int)" because "this.twoSum" is null
+	at com.mycompany.app.TwoSumTest.twoSumTestEmptyArray(TwoSumTest.java:52)
+
+twoSumTestWithValidInput(com.mycompany.app.TwoSumTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.app.TwoSum.twoSum(int[], int)" because "this.twoSum" is null
+	at com.mycompany.app.TwoSumTest.twoSumTestWithValidInput(TwoSumTest.java:16)
+
+twoSumTestHashMapEmptyArray(com.mycompany.app.TwoSumTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.app.TwoSum.twoSumHashMap(int[], int)" because "this.twoSum" is null
+	at com.mycompany.app.TwoSumTest.twoSumTestHashMapEmptyArray(TwoSumTest.java:61)
+
+twoSumTestZero(com.mycompany.app.TwoSumTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.app.TwoSum.twoSum(int[], int)" because "this.twoSum" is null
+	at com.mycompany.app.TwoSumTest.twoSumTestZero(TwoSumTest.java:96)
+
+twoSumTestHashMapWithValidInput(com.mycompany.app.TwoSumTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.app.TwoSum.twoSumHashMap(int[], int)" because "this.twoSum" is null
+	at com.mycompany.app.TwoSumTest.twoSumTestHashMapWithValidInput(TwoSumTest.java:34)
+
+twoSumTestDuplicateNums(com.mycompany.app.TwoSumTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.app.TwoSum.twoSum(int[], int)" because "this.twoSum" is null
+	at com.mycompany.app.TwoSumTest.twoSumTestDuplicateNums(TwoSumTest.java:71)
+
+twoSumTestHashMapWithNoValidInput(com.mycompany.app.TwoSumTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.app.TwoSum.twoSumHashMap(int[], int)" because "this.twoSum" is null
+	at com.mycompany.app.TwoSumTest.twoSumTestHashMapWithNoValidInput(TwoSumTest.java:43)
+
+twoSumTestHashMapDuplicateNums(com.mycompany.app.TwoSumTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mycompany.app.TwoSum.twoSumHashMap(int[], int)" because "this.twoSum" is null
+	at com.mycompany.app.TwoSumTest.twoSumTestHashMapDuplicateNums(TwoSumTest.java:80)
+

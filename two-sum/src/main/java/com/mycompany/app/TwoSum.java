@@ -1,3 +1,4 @@
+package com.mycompany.app;
 import java.util.HashMap;
 
 public class TwoSum {
@@ -51,5 +52,14 @@ public class TwoSum {
         }
         
         return indexMap;
+    }
+
+    public int[] StringToIntArray(String userInput) {
+        String[] stringNums = userInput.split(" ");
+        int[] nums = new int[stringNums.length];
+        for (int i = 0; i < stringNums.length; i++) {
+            nums[i] = Integer.parseInt(stringNums[i]);
+        }
+        return nums;
     }
 }
