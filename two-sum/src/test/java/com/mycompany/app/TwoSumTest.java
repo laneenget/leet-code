@@ -96,6 +96,9 @@ public class TwoSumTest {
         int[] result = twoSum.twoSum(nums, target);
 
         assertNotNull(result);
-        assertEquals(2, result);
+        if (result == null) {
+            result = new int[2];
+        }
+        assertEquals(2, result.length);
     }
 }
